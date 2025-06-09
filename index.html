@@ -10,24 +10,64 @@
     <link rel="stylesheet" href="bar.css">
   </head>
   <body>
-    
-    <header class="navber">
-        <div class="logo"><img class="logo_Icon" alt="" src="logo.png" /></div>
-        <div class="nav">
-            <ul class="nav_list">
-                <li class="nav_list_content selected">Home</li>
-                <li class="nav_list_content">Work</li>
-                <li class="nav_list_content">Service</li>
-                <li class="nav_list_content">About</li>
-                <li class="nav_list_content">Project</li>
-            </ul>
-        </div>
-        <div class="button_connected">
-            <button class="btn_connected">lats connected</button>
-
-        </div>
-    </header>
-    <div class="main_container">
+    <div class="main">
+      <div class="ehsan">
+        <header class="header">
+            <img
+              alt="icon logo"
+              src="./images/logo.png"
+              class="logo"
+            />
+           
+          <ul class="header_list">
+            <li class="header_list_item">
+              <a
+                aria-label="link home"
+                class="link_header"
+                onclick="smoothScroll('home')"
+                >Home</a
+              >
+            </li>
+            <li class="header_list_item">
+              <a
+                aria-label="link About"
+                onclick="smoothScroll('about')"
+                class="link_header"
+                >About</a
+              >
+            </li>
+            <li class="header_list_item">
+              <a
+                aria-label="link Team"
+                onclick="smoothScroll('team')"
+                class="link_header"
+                >Team</a
+              >
+            </li>
+            <li class="header_list_item">
+              <a
+                aria-label="link Joinus"
+                onclick="smoothScroll('joinus')"
+                class="link_header"
+                >Join</a
+              >
+            </li>
+            <li class="header_list_item">
+              <a
+                aria-label="link Publications"
+                onclick="smoothScroll('publications')"
+                class="link_header"
+                >Publications</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </header>
+        <div class="main_container">
     <div class="partone">
         <div class="right">
             <h2 class="title_name">Hi! I Am</h2>
@@ -209,8 +249,9 @@ Implemented metaheuristic algorithms like Genetic Algorithm and Particle Swarm O
             </div>
         </div> 
     </div>
-    </div>
-    <footer class="footer">
+        </div>
+      </div>
+     <footer class="footer">
         <div class="contanin_footer">
           <div class="left_footer">
             <div class="footer_logo">
@@ -242,8 +283,7 @@ Implemented metaheuristic algorithms like Genetic Algorithm and Particle Swarm O
               <div class="text_footer_box">
                 <h4 class="head_text_footer">Address</h4>
                 <p class="abouttext_footer">
-                 
-Robot Intelligence & Vision Lab, Department of Computer Engineering, Faculty of Engineering, Bu-Ali Sina University Hamedan, Iran.
+                  Robot Intelligence & Vision Lab, Department of Computer Engineering, Faculty of Engineering, Bu-Ali Sina University Hamedan, Iran.
                 </p>
               </div>
             </span>
@@ -281,6 +321,8 @@ Robot Intelligence & Vision Lab, Department of Computer Engineering, Faculty of 
           </div>
         </div>
       </footer>
+    </div>
+   
     <script src="index.js"></script>
-  </body>
+  </body> 
 </html>

@@ -8,10 +8,16 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-  }
+html,
+body {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+ol,
+ul {
+  list-style: none;
+}
   
   /* Sections
      ========================================================================== */
@@ -19,12 +25,7 @@
   /**
    * Remove the margin in all browsers.
    */
-  
-  body {
-    margin: 0;
-    height: 100%;
-    font-family: "Inter", sans-serif;
-  }
+ 
   
   /**
    * Render the `main` element consistently in IE.
