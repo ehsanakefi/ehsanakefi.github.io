@@ -684,6 +684,17 @@ margin: 0 2rem 0 3rem;
     height: 4rem;
 }
 }
+.imagemodal{
+    width: 20rem;
+    border: gainsboro solid 0.15rem;
+    border-radius: 0.5rem;
+    height: 10rem;
+}
+.row_model{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .modal {
   display: none;
   align-items: center;
@@ -708,6 +719,7 @@ margin: 0 2rem 0 3rem;
 #textBib {
   overflow-x: auto;
   overflow-y: auto;
+  width: 100%;
 }
 .header-text-modal {
   font-weight: 700;
@@ -730,9 +742,7 @@ margin: 0 2rem 0 3rem;
   width: 80%;
 }
 .value_modal {
-  line-height: 1.5rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+  width: 100%;
 }
 .show-modal {
   display: flex;

@@ -21,10 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let publicationsResult = "";
     items.map((a, e) => {
+        console.log(a.detail)
       publicationsResult += `
         <div  onclick="showModal('${
-          a.bibtex
-        }')" class="projectCart">
+          a.detail
+        }','${a.title}')" class="projectCart">
  <div class="projectCart_text">
             <h4 class="projectCart_text_title">${a.title}</h4>
             <p class="projectCart_text_detail">
