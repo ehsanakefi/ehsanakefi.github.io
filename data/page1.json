@@ -1,0 +1,33 @@
+{
+  "publications": [
+    {
+      "title": "Electronic Procurement Management System (SATEK)",
+      "subtitle": "Developed a web-based system to automate the procurement process, enabling users to submit, track, and approve purchase requests. I led the frontend development using React.js, focusing on a clean and user-friendly interface.",
+      "image": "./images/satek.png",
+      "detail":["image@./images/satek.png","text@Developed a web-based system to automate"]
+    },
+        {
+      "title": "AI-Based Image Captioning System",
+      "subtitle": "Developed an AI-powered model that automatically generates descriptive text (captions) for input images. This project demonstrates the integration of computer vision and natural language processing to create intelligent visual understanding applications.",
+      "image": "./images/imagecaptioning.png",
+      "detail":["image@./images/satek.png","text@Developed a web-based system to automate"]
+      
+    },
+        {
+      "title": "AI-Powered Smart Tourism Website",
+      "subtitle": "Designed and developed an intelligent tourism platform that personalizes travel suggestions based on user preferences. Using AI algorithms, the website analyzes user interests, travel history, and location data to recommend destinations, activities, and cultural experiences. The system includes interactive maps, dynamic filters, and real-time suggestion engines to enhance user engagement and planning efficiency.",
+      "image": "./images/tourism.png",
+      "detail":["image@./images/satek.png","text@Developed a web-based system to automate"]
+      
+    },
+        {
+      "title": "Optimization Using Metaheuristic Algorithms",
+      "subtitle": "Implemented metaheuristic algorithms like Genetic Algorithm and Particle Swarm Optimization to solve complex scheduling and resource allocation problems. The focus was on improving solution quality and efficiency where traditional methods were not effective. Developed and tested models in Python.",
+      "image": "./images/satek.png",
+      "detail":["image@./images/satek.png","text@Developed a web-based system to automate"]
+
+      
+    }
+     
+  ]
+}

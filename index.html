@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bar.css">
   </head>
+  <script src="./lazysizes.min.js" async=""></script>
+  <script src="./loadmore.js" ></script>
+  <script src="./webscript.min.js" async></script>
+  <script src="./modalbox.min.js" async></script>
   <body>
     <div class="main">
       <div class="ehsan">
@@ -38,28 +42,28 @@
             </li>
             <li class="header_list_item">
               <a
-                aria-label="link Team"
-                onclick="smoothScroll('team')"
+                aria-label="link Project"
+                onclick="smoothScroll('project')"
                 class="link_header"
-                >Team</a
+                >Project</a
               >
             </li>
             <li class="header_list_item">
               <a
-                aria-label="link Joinus"
-                onclick="smoothScroll('joinus')"
+                aria-label="link Experience"
+                onclick="smoothScroll('experience')"
                 class="link_header"
-                >Join</a
+                >Experience</a
               >
             </li>
-            <li class="header_list_item">
+            <!-- <li class="header_list_item">
               <a
                 aria-label="link Publications"
                 onclick="smoothScroll('publications')"
                 class="link_header"
                 >Publications</a
               >
-            </li>
+            </li> -->
           </ul>
           <div class="hamburger">
             <span class="bar"></span>
@@ -68,7 +72,32 @@
           </div>
         </header>
         <div class="main_container">
-    <div class="partone">
+    <section id="home" class="partone">
+       <div id="modal" class="modal">
+            <div class="modal-content">
+              <div class="headr-modal">
+                <span id="headr-id-modal"></span>
+                <span class="close-modal">&times;</span>
+              </div>
+              <div id="modal-details">
+                <div id="textBib"></div>
+                <!-- <div id="tooltip" class="tooltip">Copied!</div> -->
+                <!-- <img
+                  onclick="copyContent()"
+                  src="./image/copy.png"
+                  alt="icon copy"
+                  class="icon_copy"
+                /> -->
+
+                <div class="lds-ring">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="right">
             <h2 class="title_name">Hi! I Am</h2>
             <h2 class="title_name">Ehsan Akefi</h2>
@@ -94,10 +123,10 @@
         </div>
         <div class="detailname"></div>
       
-    </div>
+      </section>
 
-   <div class="parttwo">
-    <h2 class="title_partthree">Abot Me</h2>
+   <section id="about" class="parttwo">
+    <h2 class="title_partthree">About Me</h2>
     <div class="boxFlex">
     <div class="left_parttwo">
         <p class="about_partwo">Over the past several years, I’ve worked on diverse projects that integrate cutting-edge AI techniques with scalable and user-friendly application development. My technical stack includes Python, JavaScript, C#, HTML5, React, and frameworks such as PyTorch and Keras, which I regularly use to build intelligent systems.
@@ -173,85 +202,49 @@
         </div>
     </div>
     </div>
-   </div>
-   <div class="partthree">
+  </section>
+   <section id="project"  class="partthree">
     <h2 class="title_partthree">Project</h2>
-    <div class="projectCart">
-        <div class="projectCart_text">
-            <h4 class="projectCart_text_title">Electronic Procurement Management System (SATEK)</h4>
-            <p class="projectCart_text_detail">Developed a web-based system to automate the procurement process, enabling users to submit, track, and approve purchase requests. I led the frontend development using React.js, focusing on a clean and user-friendly interface.</p>
-        </div>
-        <div class="projectCart_image">
-            <img src="./images/satek.png" class="projectCart_image_img" />
-        </div>
-    </div>
-     <div class="projectCart">
-        <div class="projectCart_text">
-            <h4 class="projectCart_text_title">AI-Based Image Captioning System</h4>
-            <p class="projectCart_text_detail">Developed an AI-powered model that automatically generates descriptive text (captions) for input images. This project demonstrates the integration of computer vision and natural language processing to create intelligent visual understanding applications.
-
-</p>
-        </div>
-        <div class="projectCart_image">
-            <img src="./images/imagecaptioning.png" class="projectCart_image_img" />
-        </div>
-    </div>
-     <div class="projectCart">
-        <div class="projectCart_text">
-            <h4 class="projectCart_text_title">AI-Powered Smart Tourism Website</h4>
-            <p class="projectCart_text_detail">
-Designed and developed an intelligent tourism platform that personalizes travel suggestions based on user preferences. Using AI algorithms, the website analyzes user interests, travel history, and location data to recommend destinations, activities, and cultural experiences. The system includes interactive maps, dynamic filters, and real-time suggestion engines to enhance user engagement and planning efficiency.</p>
-        </div>
-        <div class="projectCart_image">
-            <img src="./images/tourism.png" class="projectCart_image_img" />
-        </div>
-    </div>
-    <div class="projectCart">
-        <div class="projectCart_text">
-            <h4 class="projectCart_text_title">Optimization Using Metaheuristic Algorithms</h4>
-            <p class="projectCart_text_detail">
-Implemented metaheuristic algorithms like Genetic Algorithm and Particle Swarm Optimization to solve complex scheduling and resource allocation problems. The focus was on improving solution quality and efficiency where traditional methods were not effective. Developed and tested models in Python.</p>
-        </div>
-        <div class="projectCart_image">
-            <img src="./images/geneticAlgorithm.png" class="projectCart_image_img" />
-        </div>
-    </div>
+     <div id="publications_box_team" class="box_team1"></div>
  
     <div class="box_more">
-        <button class="btn_connected btn_connected1">Load More...</button>
+        <button  id="loadMoreButton" class="btn_connected btn_connected1">Load More...</button>
     </div>
-    </div>
-    <div class="partfour">
+    </section>
+    <section id="experience" class="partfour">
     <h2 class="title_partthree">Experience</h2>
         <div class="partfour_processLine">
             <div class="partfour_processLine_line">
-            <div class="partfour_processLine_circle">
-            <p class="partfour_textLine_text">Frontend Manager Of Satek Project</p>
-
             </div>
-            <div class="partfour_processLine_circle partfour_pos1">
-            <p class="partfour_textLine_text">Board Master at AI startup</p>
-                
-            </div>
-            <div class="partfour_processLine_circle partfour_pos2">
-            <p class="partfour_textLine_text">Teaching Assistent</p>
-
-            </div>
-            <div class="partfour_processLine_circle partfour_pos3">
-            <p class="partfour_textLine_text">Organizer of ACM programming contests</p>
-
-            </div>
-            <div class="partfour_processLine_circle partfour_pos4">
-            <p class="partfour_textLine_text">Particpation in social and student-led initative</p>
-
-            </div>
-
-            </div>
+             <div class="partfour_processLine_box partfour_pos">
+                <div class="partfour_processLine_circle">
+                </div>
+                <p class="partfour_textLine_text ">Frontend Manager Of Satek Project</p>
+              </div>
+              <div class="partfour_processLine_box partfour_pos1">
+                <div class="partfour_processLine_circle">
+                </div>
+                <p class="partfour_textLine_text">Board Master at AI startup</p>
+              </div>
+              <div class="partfour_processLine_box partfour_pos2">
+                <div class="partfour_processLine_circle">
+                </div>
+                <p class="partfour_textLine_text">Teaching Assistent</p>
+              </div> 
+               <div class="partfour_processLine_box partfour_pos3">
+                <div class="partfour_processLine_circle">
+                </div>
+                <p class="partfour_textLine_text">Organizer of ACM programming contests</p>
+              </div>
+              <div class="partfour_processLine_box partfour_pos4">
+                <div class="partfour_processLine_circle">
+                </div>
+                <p class="partfour_textLine_text">Particpation in social and student-led initative</p>
+              </div>
         </div> 
-    </div>
+      </section>
         </div>
-      </div>
-     <footer class="footer">
+        <footer class="footer">
         <div class="contanin_footer">
           <div class="left_footer">
             <div class="footer_logo">
@@ -321,8 +314,9 @@ Implemented metaheuristic algorithms like Genetic Algorithm and Particle Swarm O
           </div>
         </div>
       </footer>
+      </div>
+     
     </div>
    
-    <script src="index.js"></script>
   </body> 
 </html>
