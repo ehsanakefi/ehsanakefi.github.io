@@ -4,10 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const fetchData = async (page) => {
     try {
-    console.log("$$$$$$$$")
       const response = await fetch(`./data/page${page}.json`);
       const jsonData = await response.json();
-      console.log("SSS",jsonData.publications)
       
       return jsonData.publications;
 
@@ -21,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let publicationsResult = "";
     items.map((a, e) => {
-        console.log(a.detail)
       publicationsResult += `
         <div  onclick="showModal('${
           a.detail
@@ -39,20 +36,17 @@ ${a.subtitle}
   
   `;
     });
-    console.log("SSS",publicationsResult)
     
     let e = document.getElementById("publications_box_team");
     let button = document.getElementById("loadMoreButton");
     if (totalPages == currentPage) {
       button.remove();
     }
-    console.log("SSS",publicationsResult)
     
     e.innerHTML += publicationsResult;
   };
 
   const loadMore = async () => {
-    console.log("SSS")
     if (currentPage < totalPages) {
       currentPage++;
       const nextPageData = await fetchData(currentPage);
